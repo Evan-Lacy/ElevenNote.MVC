@@ -29,7 +29,7 @@ namespace ElevenNote.Data
         public static ApplicationDbContext Create()
         {
             return new ApplicationDbContext();
-        }
+        } 
 
         public DbSet<Note> Notes { get; set; }
     }
