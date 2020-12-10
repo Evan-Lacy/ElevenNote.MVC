@@ -12,6 +12,7 @@ using Microsoft.Owin;
 using Microsoft.Owin.Security;
 using ElevenNote.WEBMVC.Models;
 using ElevenNote.Data;
+using System.Data.Entity.ModelConfiguration;
 
 namespace ElevenNote.WEBMVC
 {
@@ -107,4 +108,6 @@ namespace ElevenNote.WEBMVC
             return new ApplicationSignInManager(context.GetUserManager<ApplicationUserManager>(), context.Authentication);
         }
     }
+
+    
 }
